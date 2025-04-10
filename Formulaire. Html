@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire d'inscription</title>
+</head>
+<body>
+  <form>
+    <label for="Age">Âge :</label><br>
+    <input type="number" id="Age" name="Âge" required><br><br>
+
+    <label for="filière">Choisissez votre filière :</label><br>
+    <select id="filière" name="filière" required>
+      <option value="1">1 : Génie informatique</option>
+      <option value="2">2 : Génie électrique</option>
+      <option value="3">3 : Génie mécanique</option>
+      <option value="4">4 : Génie chimie</option>
+    </select><br><br>
+
+    <label for="Année">Année :</label><br>
+    <select id="Année" name="Année" required>
+      <option value="1">1 : Première année</option>
+      <option value="2">2 : Deuxième année</option>
+    </select><br><br>
+
+    <label for="date-de-naissance">Date de naissance (JJ.MM.AAAA) :</label><br>
+    <input type="text" id="date" name="date" pattern="([0-2][0-9]|3[01])[.](0[1-9]|1[0-2])[.](\d{4})" required><br><br>
+
+    <input type="submit" value="S'inscrire">
+  </form>
+</body>
+</html>
+
